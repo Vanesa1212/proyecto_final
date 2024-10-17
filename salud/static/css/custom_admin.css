@@ -5,7 +5,7 @@ body {
     background-attachment: fixed; /* Hace que el fondo sea fijo mientras se desplaza */
 }
 
-img {
+login-logo img {
     width: 200px;  /* Ajusta el tamaño aquí */
     height: auto;  /* Mantén la proporción de aspecto */
 }
