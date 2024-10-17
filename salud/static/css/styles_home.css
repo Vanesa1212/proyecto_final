@@ -1,0 +1,88 @@
+
+/* Estilos básicos */
+.text_orden {
+    text-align: center;
+}
+
+.navbar {
+    border: 1px solid rgb(201, 199, 199); /* Adjust the border color and style as needed */
+    border-radius: 10px; /* Add rounded corners if desired */
+    
+}
+
+#sidebarMenu {
+    border-radius: 10px;
+    border: 1px solid rgb(201, 199, 199);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.26);
+}
+
+#sidebarMenu a {
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #fffefe;
+    padding: 8px;
+    text-align: left;  /* Asegúrate de que el texto se alinee a la izquierda */
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    padding: 1%;
+    
+}
+
+.bi-house-door {
+    padding-right: 3px;
+}
+
+.bi-person-circle{
+    padding-right: 3px;
+}
+
+.dropdown-item {
+    color: black;
+    padding-bottom: 10px;
+    font-size: 110%;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dropdown-item:hover {
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: #c5c5c5;
+}
+
+.sidebar{
+    border-radius: 10px;
+}
+/* Estilos personalizados */
+.table {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.295);
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right, #4CAF50, #339966);
+    box-shadow: 0px 4px 6px rgba(92, 91, 91, 0.2);
+}
+
+/* Animación al pasar el mouse sobre los botones */
+.btn:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
