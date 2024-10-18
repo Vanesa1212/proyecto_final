@@ -18,7 +18,7 @@ class Persona(AbstractBaseUser, PermissionsMixin):
     apellido1 = models.CharField(max_length=50)
     apellido2 = models.CharField(max_length=50)
     nombre1 = models.CharField(max_length=50)
-    nombre2 = models.CharField(max_length=50, db_default='None', null=False)
+    nombre2 = models.CharField(max_length=50, null=True, blank=True)  # Ahora es opcional
     fecha_nac = models.DateField()
     email = models.EmailField(unique=True)
     sexo_biologico = models.ForeignKey(sexo_biologico, on_delete=models.SET_NULL, null=True)
@@ -33,13 +33,13 @@ class Persona(AbstractBaseUser, PermissionsMixin):
     groups = models.ManyToManyField(
         'auth.Group',
         blank=True,
-        related_name='persona_set',  # Cambia este nombre según tus necesidades
+        related_name='persona_set',
     )
 
     user_permissions = models.ManyToManyField(
         'auth.Permission',
         blank=True,
-        related_name='persona_user_permissions',  # Cambia este nombre para evitar conflictos
+        related_name='persona_user_permissions',
     )
 
     USERNAME_FIELD = 'numero_id'
